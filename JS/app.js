@@ -159,7 +159,7 @@ const students = [
 // students arrayidan qizlarni o'zini o'qiydigan fanlarini alifbo tartibida tartiblaganda eng birinchida va eng oxirida turadigan qizlarning ismlari uzunligi o'rtasidagi farq qancha?
 
 function task(array) {
-  const qizlar = array.filter((s) => s.gender === "female");
+  const qizlar = array.filter((student) => student.gender === "female");
   qizlar.sort((a, b) => a.major.localeCompare(b.major));
 
   const firstGirl = qizlar[0].name.length;
